@@ -29,8 +29,8 @@ pip install albumentations
 ### Dataset Preparation
 1. Download `third-molar dataset' from MAT.
 ```
-segmentation location : ailab_mat/dataset/Third_molar/mmsegmentation/dataset
-classification location : ailab_mat/dataset/Third_molar/classification/dataset
+segmentation location : ailab_mat/dataset/Third_molar/mmsegmentation/
+classification location : ailab_mat/dataset/Third_molar/classification/
 ```
 
 2. Organize the folders as follows
