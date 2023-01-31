@@ -13,11 +13,15 @@ Tested on RTX 3090 with python 3.8, pytorch 1.12.0, torchvision 0.13.0 and CUDA 
 
 1. Set up a python environment
 ```
-conda create -n wsol_env python=3.8
-conda activate wsol_env
-pip install torch torchvision
-pip install -U albumentation
-pip install neptune-client
+conda create -n third-molar python=3.8
+conda activate third-molar
+conda install pytorch torchvision -c pytorch
+pip install -U openmim
+mim install mmcv-full
+pip install mmsegmentation
+
+pip install tqdm
+pip install albumentations
 ```
 
 ## Train & Evaluation
