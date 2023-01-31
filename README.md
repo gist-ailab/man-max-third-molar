@@ -72,19 +72,24 @@ third_molar(classification)
        └── test
 ├── Annotations
 ```
-### Train on sample dataset
+### Train on segmentation&classification dataset
 ```
-python main.py --gpu_num 0
+CUDA_VISIBLE_DEVICES=0,1 sh mmsegmentation/tools/dist_train.sh ${CONFIG_FILE} 2
 ```
-
-### Evaluation on test dataset
 ```
-python inference.py --gpu_num 0 --th 0.4
+python classification/train_down_ext.py --gpu_id 0 --model Vision_Transformer --learning_rate 0.00001 --model_name ViT_large_r50_s32_384 --batch_size 8
 ```
 
 ### Evaluation on test dataset
 ```
-python visualization.py --gpu_num 0 --th 0.4
+python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE}
+```
+```
+python test_down_ext.py --weight ${CHECKPOINT_FILE} 
+```
+### inference on test dataset
+```
+python demo/inference_demo.py
 ```
 
 ## License
