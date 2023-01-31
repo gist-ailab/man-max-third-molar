@@ -8,7 +8,7 @@ https://github.com/gist-ailab/man-max-third-molar/files/10543329/main_figure_V6.
 
 ### Environment Setup
 
-Tested on RTX 3090 with python 3.8, pytorch 1.12.0, torchvision 0.13.0 and CUDA 11.1
+Tested on RTX 2080ti with python 3.8, pytorch 1.9.0, torchvision 0.10.0 and CUDA 11.3
 
 
 1. Set up a python environment
