@@ -1,9 +1,5 @@
-# Localization Map Distillation For Weakly Supervised Object Localization
+# Automated Diagnosis for Extraction Difficulty of Maxillary and Mandibular Third Molars and Post-Extraction Complications Using Deep Learning
 
-
-## Updates & TODO Lists
-- [X] (2022.12.27) README_TEMPLATES.md is released.
-- [ ] Adding more samples.
 
 
 ## Getting Started
