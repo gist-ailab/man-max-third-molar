@@ -94,7 +94,7 @@ The source code of this repository is released only for academic use. See the [l
 
 
 ## Authors
-- **Jongwon Kim** [jongwonkim](https://github.com/jwk92)
+- **Junseok Lee, Jumi Park, Seong-yong Moon, Kyoobin Lee**
 
 ## License
 Distributed under the MIT License.
