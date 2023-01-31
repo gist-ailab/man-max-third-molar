@@ -1,0 +1,78 @@
+# Localization Map Distillation For Weakly Supervised Object Localization
+
+
+## Updates & TODO Lists
+- [X] (2022.12.27) README_TEMPLATES.md is released.
+- [ ] Adding more samples.
+
+
+## Getting Started
+
+### Environment Setup
+
+Tested on RTX 3090 with python 3.8, pytorch 1.12.0, torchvision 0.13.0 and CUDA 11.1
+
+
+1. Set up a python environment
+```
+conda create -n wsol_env python=3.8
+conda activate wsol_env
+pip install torch torchvision
+pip install -U albumentation
+pip install neptune-client
+```
+
+## Train & Evaluation
+
+### Dataset Preparation
+1. Download `CUB_dataset' from MAT.
+```
+location : MAT/server/dataset/CUB_dataset
+```
+
+2. Organize the folders as follows
+```
+CUB_dataset
+├── attributes
+├── images
+       └── 001.Black_footed_Albatross
+       ...
+       └── 200.Common_Yellowthroat 
+├── parts
+├── bounding_boxes.txt
+├── classes.txt
+├── image_class_labels.txt
+├── images.txt
+├── test_bounding_boxes.txt
+└── train_test_split.txt
+
+```
+### Train on sample dataset
+```
+python main.py --gpu_num 0
+```
+
+### Evaluation on test dataset
+```
+python inference.py --gpu_num 0 --th 0.4
+```
+
+### Evaluation on test dataset
+```
+python visualization.py --gpu_num 0 --th 0.4
+```
+
+## License
+
+The source code of this repository is released only for academic use. See the [license](./LICENSE.md) file for details.
+
+
+
+## Authors
+- **Jongwon Kim** [jongwonkim](https://github.com/jwk92)
+
+## License
+Distributed under the MIT License.
+
+## Acknowledgments
+This work was supported by the ICT R&D program of MSIT/IITP[2020-0-00857, Development of Cloud Robot Intelligence Augmentation, Sharing and Framework Technology to Integrate and Enhance the Intelligence of Multiple Robots]
