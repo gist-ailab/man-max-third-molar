@@ -27,27 +27,50 @@ pip install albumentations
 ## Train & Evaluation
 
 ### Dataset Preparation
-1. Download `CUB_dataset' from MAT.
+1. Download `third-molar dataset' from MAT.
 ```
-location : MAT/server/dataset/CUB_dataset
+segmentation location : ailab_mat/dataset/Third_molar/mmsegmentation/dataset
+classification location : ailab_mat/dataset/Third_molar/classification/dataset
 ```
 
 2. Organize the folders as follows
 ```
-CUB_dataset
-├── attributes
-├── images
-       └── 001.Black_footed_Albatross
-       ...
-       └── 200.Common_Yellowthroat 
-├── parts
-├── bounding_boxes.txt
-├── classes.txt
-├── image_class_labels.txt
-├── images.txt
-├── test_bounding_boxes.txt
-└── train_test_split.txt
+third_molar(segmentation)
+├── leftImg8bit
+       └── train
+              └── 19760000.jpg.png
+              ...
+              └── 4182620000.jpg.png
+       └── val
+       └── test
 
+├── gtFine
+       └── train
+              └── 19760000.jpg.png
+              ...
+              └── 4182620000.jpg.png
+       └── val
+       └── test
+
+```
+```
+third_molar(classification)
+├── crop_PNG_Images
+       └── train
+              └── 19760000.jpg.png
+              ...
+              └── 4182620000.jpg.png
+       └── val
+       └── test
+
+├── crop_MASK_Images
+       └── train
+              └── 19760000.jpg.png
+              ...
+              └── 4182620000.jpg.png
+       └── val
+       └── test
+├── Annotations
 ```
 ### Train on sample dataset
 ```
