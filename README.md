@@ -91,10 +91,10 @@ python classification/train_down_ext.py --gpu_id 0 --model Vision_Transformer --
 
 ### Evaluation on test dataset
 ```
-python tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE}
+python mmsegmentation/tools/test.py ${CONFIG_FILE} ${CHECKPOINT_FILE}
 ```
 ```
-python test_down_ext.py --weight ${CHECKPOINT_FILE} 
+python classification/test_down_ext.py --weight ${CHECKPOINT_FILE} 
 ```
 ### inference on test dataset
 ```
