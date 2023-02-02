@@ -15,7 +15,7 @@ RTX 2080ti with python 3.8, pytorch 1.9.0, torchvision 0.10.0 and CUDA 11.3
 ```
 conda create -n third-molar python=3.8
 conda activate third-molar
-conda install pytorch torchvision -c pytorch
+conda install pytorch==1.9.0 torchvision==0.10.0 torchaudio==0.9.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 pip install -U openmim
 mim install mmcv-full
 pip install mmsegmentation
@@ -71,6 +71,15 @@ third_molar(classification)
        └── val
        └── test
 ├── Annotations
+       └── 19760000.jpg.png.json
+              └── "classTitle":"#48"
+                  {"tags":[{"name":"P.III".......},
+                            "name":"P.B".....}
+                            "name":"N.3"....}
+                            .
+                            .
+                            .
+                            }
 ```
 ### Train on segmentation&classification dataset
 ```
