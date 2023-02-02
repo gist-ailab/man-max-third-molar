@@ -1,4 +1,4 @@
-# Automated Diagnosis for Extraction Difficulty of Maxillary and Mandibular Third Molars and Post-Extraction Complications Using Deep Learning
+# Automated Diagnosis for Extraction Difficulty of Maxillary and Mandibular Third Molars and Post-Extraction Complications Using Deep Learning (Submit: Journal of dentistry)
 
 ## overview
 
