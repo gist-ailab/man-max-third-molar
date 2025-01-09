@@ -2,7 +2,7 @@
 
 ## overview
 
-![Alt text](./Figure_1.png)
+![model](./Figure_1.png)
 
 ## Getting Started
 
