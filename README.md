@@ -26,6 +26,10 @@ pip install albumentations
 
 ## Train & Evaluation
 
+### Dataset Availability
+
+Contact junseoklee@gm.gist.ac.kr
+
 ### Dataset Preparation
 1. Download `third-molar dataset' from MAT.
 ```
