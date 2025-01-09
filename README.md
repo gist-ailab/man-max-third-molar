@@ -2,7 +2,7 @@
 
 ## overview
 
-https://github.com/gist-ailab/man-max-third-molar/files/10543329/main_figure_V6.pdf
+https://github.com/gist-ailab/man-max-third-molar/Figure 1.tiff
 
 ## Getting Started
 
