@@ -2,7 +2,7 @@
 
 ## overview
 
-![Alt text](https://github.com/gist-ailab/man-max-third-molar/Figure_1.png)
+![Alt text](./Figure_1.png)
 
 ## Getting Started
 
