@@ -112,7 +112,7 @@ The source code of this repository is released only for academic use. See the [l
 
 
 ## Authors
-- **Junseok Lee, Jumi Park, Seong-yong Moon, Kyoobin Lee**
+- **Junseok Lee, Jumi Park, Seongju Lee, Seong-yong Moon, Kyoobin Lee**
 
 ## License
 Distributed under the MIT License.
